@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/Flag.js',
   output: {
     libraryTarget: 'umd',
-    library: 'react-world-flags',
-    filename: 'react-world-flags.js',
+    library: 'nextjs-world-flags',
+    filename: 'nextjs-world-flags.js',
     path: path.resolve(__dirname, 'dist'),
     globalObject: 'this',
   },

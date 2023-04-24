@@ -1,8 +1,8 @@
 {
-  "name": "react-world-flags",
-  "version": "1.5.1",
-  "description": "SVG flags of the world for react",
-  "main": "dist/react-world-flags.js",
+  "name": "nextjs-world-flags",
+  "version": "1.0.0",
+  "description": "SVG flags of the world for Next.js. A variant of react-world-flags.",
+  "main": "dist/nextjs-world-flags.js",
   "jest": {
     "moduleNameMapper": {
       "\\.(svg)$": "<rootDir>/src/__mocks__/fileMock.js"
@@ -21,12 +21,23 @@
     "svg"
   ],
   "author": "SMU",
+  "contributors": [
+    {
+      "name": "Connor Doman",
+      "email": "connor@connordoman.dev"
+    },
+    {
+      "name": "SMU",
+      "url": "https://www.npmjs.com/package/react-world-flags"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/smucode/react-world-flags/issues"
   },
   "homepage": "https://github.com/smucode/react-world-flags#readme",
   "dependencies": {
+    "next": "^13.3.1",
     "svg-country-flags": "^1.2.10",
     "svgo": "^2.8.0",
     "world-countries": "^4.0.0"

@@ -1,6 +1,4 @@
-[![CircleCI](https://circleci.com/gh/smucode/react-world-flags.svg?style=svg)](https://circleci.com/gh/smucode/react-world-flags)
-
-# react-world-flags
+# nextjs-world-flags
 
 ## A variant of `react-world-flags` for Next.js
 
@@ -18,7 +16,6 @@ npm install react-world-flags
 
 ```javascript
 import Flag from 'react-world-flags'
-
 ;<Flag code={code} />
 ```
 
@@ -28,7 +25,6 @@ You can also pass an optional `fallback` which renders if the given code doesn't
 
 ```javascript
 import Flag from 'react-world-flags'
-
 ;<Flag code="foo" fallback={<span>Unknown</span>} />
 ```
 
