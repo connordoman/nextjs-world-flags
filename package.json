@@ -63,7 +63,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "webpack",
+    "build": "webpack && cp ./dist/nextjs-world-flags.js ./ && tsc",
     "gen": "babel-node scripts/genFlagExports.js",
     "build-demo": "webpack --config docs/webpack.config.js",
     "pre-publish": "npm run compress && npm run gen && npm run test && npm run build && npm run build-demo",
