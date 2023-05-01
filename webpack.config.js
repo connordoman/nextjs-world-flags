@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   mode: 'production',
   entry: './src/Flag.js',
+  devtool: 'inline-source-map',
   output: {
     libraryTarget: 'umd',
     library: 'nextjs-world-flags',

@@ -3,7 +3,7 @@
 /* eslint-disable better/no-ifs */
 
 import React from 'react'
-import flags from './flags'
+import * as flags from './flags'
 import { getAlphaTwoCode } from './country'
 import Image from 'next/image'
 
