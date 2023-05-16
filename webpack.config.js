@@ -1,37 +1,21 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  mode: 'production',
-  entry: './src/Flag.js',
-  devtool: 'inline-source-map',
-  output: {
-    libraryTarget: 'umd',
-    library: 'nextjs-world-flags',
-    filename: 'nextjs-world-flags.js',
-    path: path.resolve(__dirname, 'dist'),
-    globalObject: 'this',
-  },
-  externals: {
-    react: 'umd react',
-    'react-dom': 'umd react-dom',
-  },
+  entry: './src/index.ts',
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
-        test: /\.(svg)$/,
-        loader: 'svg-url-loader',
-        options: { noquotes: true },
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
     ],
   },
-}
+  resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
